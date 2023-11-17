@@ -5,7 +5,7 @@
     "_release": "3",
     "scenes": [
         {
-            "name": "Scene 1",
+            "name": "Test Level",
             "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "width": 20,
             "height": 18,
