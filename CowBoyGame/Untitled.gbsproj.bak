@@ -379,7 +379,39 @@
             "symbol": "scene_1",
             "x": 367,
             "y": 210,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "Enemy",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "1",
+                    "symbol": "actor_0",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [
+                        {
+                            "command": "EVENT_ACTOR_DEACTIVATE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "18437d38-5fcd-41d7-bf3f-33cef02374a5"
+                        }
+                    ],
+                    "id": "54c7312e-2704-4c19-8dbd-649c07aecb82",
+                    "x": 17,
+                    "y": 14
+                }
+            ],
             "triggers": [],
             "script": [
                 {

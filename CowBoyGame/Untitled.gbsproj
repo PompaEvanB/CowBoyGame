@@ -395,7 +395,152 @@
                     "symbol": "actor_0",
                     "script": [],
                     "startScript": [],
-                    "updateScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+                            "args": {
+                                "actorId": "player",
+                                "operation": "left",
+                                "otherActorId": "$self$",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "left"
+                                            }
+                                        },
+                                        "id": "8fb9f75b-1f7d-43b4-a0ef-d78d6e893a77"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "198bca6f-dad1-43bd-98fa-d157f89252ef"
+                        },
+                        {
+                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+                            "args": {
+                                "actorId": "player",
+                                "operation": "right",
+                                "otherActorId": "$self$",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "right"
+                                            }
+                                        },
+                                        "id": "6a084d79-9b7e-481b-afb9-20301903dd76"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "a83608cc-fa17-4cb6-842b-b01ba4041476"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 1,
+                                "frames": 30,
+                                "__collapse": true
+                            },
+                            "id": "3a3716c2-081e-448f-b975-9cf72ec24783"
+                        },
+                        {
+                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+                            "args": {
+                                "actorId": "player",
+                                "operation": "left",
+                                "otherActorId": "$self$",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "left"
+                                            }
+                                        },
+                                        "id": "414dfa8a-2095-47d4-872d-50f97bf5c10a"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "47adc8e3-ebd7-455b-8612-54ea31be7926"
+                        },
+                        {
+                            "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+                            "args": {
+                                "actorId": "player",
+                                "operation": "right",
+                                "otherActorId": "$self$",
+                                "__collapseElse": true,
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "right"
+                                            }
+                                        },
+                                        "id": "e37b929f-b9ed-40e2-af4a-a872df148ef1"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "f4342fb2-5355-49e5-bae8-d71691ef4c8d"
+                        },
+                        {
+                            "command": "EVENT_LAUNCH_PROJECTILE",
+                            "args": {
+                                "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                                "spriteStateId": "",
+                                "actorId": "$self$",
+                                "x": 0,
+                                "y": 0,
+                                "otherActorId": "$self$",
+                                "direction": "right",
+                                "angle": 0,
+                                "angleVariable": "L0",
+                                "directionType": "actor",
+                                "initialOffset": 0,
+                                "speed": 2,
+                                "animSpeed": 15,
+                                "lifeTime": 1,
+                                "loopAnim": true,
+                                "destroyOnHit": true,
+                                "collisionGroup": "3",
+                                "collisionMask": [
+                                    "player"
+                                ],
+                                "__collapse": true
+                            },
+                            "id": "09becdc4-20db-4a5e-84e4-06498121a6db"
+                        }
+                    ],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [
@@ -408,7 +553,7 @@
                         }
                     ],
                     "id": "54c7312e-2704-4c19-8dbd-649c07aecb82",
-                    "x": 17,
+                    "x": 18,
                     "y": 14
                 }
             ],
@@ -424,7 +569,16 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [
+                {
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "$self$",
+                        "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                    },
+                    "id": "990a5cc2-7a14-40d3-b6d9-975ab427adfd"
+                }
+            ]
         }
     ],
     "backgrounds": [
