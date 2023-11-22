@@ -586,6 +586,18 @@
                         "__collapse": true
                     },
                     "id": "8644b76e-e81b-4075-96d4-1722bf7f42bd"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "1",
+                        "value": {
+                            "type": "number",
+                            "value": 3
+                        },
+                        "__collapse": true
+                    },
+                    "id": "94a5d391-0ad1-45a1-b48e-0aa90bff6fc4"
                 }
             ],
             "playerHit1Script": [],
@@ -598,6 +610,39 @@
                         "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
                     },
                     "id": "990a5cc2-7a14-40d3-b6d9-975ab427adfd"
+                },
+                {
+                    "command": "EVENT_DEC_VALUE",
+                    "args": {
+                        "variable": "1"
+                    },
+                    "id": "1ae299ae-1145-4fad-aecc-666d3b271b29"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "1",
+                        "operator": "<=",
+                        "comparator": "0",
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "9706d3a1-4985-4b97-814e-4a2999b39864"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "cfe36c42-8866-48a3-a1a1-e4c0af84d8a4"
                 }
             ],
             "autoFadeEventCollapse": true
@@ -1648,6 +1693,11 @@
             "id": "0",
             "name": "Ammo",
             "symbol": "var_ammo"
+        },
+        {
+            "id": "1",
+            "name": "Health",
+            "symbol": "var_health"
         }
     ],
     "engineFieldValues": [
