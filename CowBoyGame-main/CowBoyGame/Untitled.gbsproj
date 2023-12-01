@@ -6705,14 +6705,14 @@
                     "x": 23,
                     "y": 22,
                     "symbol": "trigger_1",
-                    "width": 1,
+                    "width": 3,
                     "height": 1,
                     "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
-                                "x": 0,
+                                "x": null,
                                 "y": 0,
                                 "direction": "",
                                 "fadeSpeed": "2"
@@ -6724,80 +6724,11 @@
                 },
                 {
                     "name": "",
-                    "id": "adeb8718-89c4-4eb8-876b-2f87da2e58e3",
-                    "x": 24,
-                    "y": 22,
-                    "symbol": "trigger_2",
-                    "width": 1,
-                    "height": 1,
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
-                                "x": 0,
-                                "y": 0,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "6f5e648f-600b-4830-9e4f-4bebc269d3fc"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "edf52f2a-f370-421b-8818-23e7137b2118",
-                    "x": 24,
-                    "y": 22,
-                    "symbol": "trigger_3",
-                    "width": 2,
-                    "height": 1,
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
-                                "x": 0,
-                                "y": 0,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "0cca1606-9a46-486a-bf15-96fc4fad3df9"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "29f77537-6b3b-4f8b-87c5-53b808c2d501",
-                    "x": 80,
-                    "y": 22,
-                    "symbol": "trigger_4",
-                    "width": 1,
-                    "height": 1,
-                    "script": [
-                        {
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
-                                "x": 0,
-                                "y": 0,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            },
-                            "id": "a642dd0b-cb0a-494e-b89f-4eecc7c0b8c4"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
                     "id": "1bdbb31b-ba51-461d-879b-fe54cd055c5c",
                     "x": 79,
                     "y": 22,
                     "symbol": "trigger_5",
-                    "width": 1,
+                    "width": 2,
                     "height": 1,
                     "script": [],
                     "leaveScript": []
@@ -7130,7 +7061,8 @@
             "height": 18,
             "imageWidth": 2016,
             "imageHeight": 144,
-            "filename": "DesertBG1_3.png"
+            "filename": "DesertBG1_3.png",
+            "tileColors": []
         },
         {
             "id": "7c770363-2b37-440f-a2df-acfdb8bf4a22",
@@ -7140,7 +7072,28 @@
             "height": 23,
             "imageWidth": 2016,
             "imageHeight": 184,
-            "filename": "DesertBG1_4.png"
+            "filename": "DesertBG1_4.png",
+            "tileColors": []
+        },
+        {
+            "id": "0f7ae278-2687-4300-a185-77c5819fb056",
+            "name": "caveScene",
+            "symbol": "bg_cavescene",
+            "width": 80,
+            "height": 18,
+            "imageWidth": 640,
+            "imageHeight": 144,
+            "filename": "caveScene.png"
+        },
+        {
+            "id": "0f2e1825-b6ca-4030-963b-1d175d3062b6",
+            "name": "desertScene",
+            "symbol": "bg_desertscene",
+            "width": 80,
+            "height": 18,
+            "imageWidth": 640,
+            "imageHeight": 144,
+            "filename": "desertScene.png"
         },
         {
             "id": "3915e19e-f9c0-406f-8e1d-0721d02f10dd",
@@ -9942,17 +9895,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "09551266-009c-4a62-8adc-4be7a0327988",
-        "startX": 9,
-        "startY": 2,
+        "startSceneId": "246f4096-4ddb-414b-a4d3-5da54c752f81",
+        "startX": 2,
+        "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 200.8000030517578,
-        "worldScrollY": 335.20001220703125,
-        "zoom": 213.2062726318827,
+        "worldScrollX": 0,
+        "worldScrollY": 204,
+        "zoom": 149.8391568083307,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
