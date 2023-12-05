@@ -10168,11 +10168,12 @@
                     "id": "4392d67d-65ab-495f-9376-29bdb3bf3991"
                 },
                 {
-                    "command": "EVENT_ACTOR_HIDE",
+                    "command": "EVENT_ACTOR_SET_SPRITE",
                     "args": {
-                        "actorId": "0"
+                        "actorId": "0",
+                        "spriteSheetId": "74957699-8963-4b33-ab36-763e88e9269e"
                     },
-                    "id": "83d36691-0e4d-402f-96cf-831adfee1e6f"
+                    "id": "11b83217-65f6-4fe9-bc18-3b9548e5bf9b"
                 }
             ]
         }
