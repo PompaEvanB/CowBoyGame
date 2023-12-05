@@ -4577,7 +4577,7 @@
                                 "variable": "L0",
                                 "value": {
                                     "type": "number",
-                                    "value": 2
+                                    "value": 3
                                 }
                             },
                             "id": "6437fb66-6d71-482d-9efe-cda421ea2b4e"
@@ -5040,7 +5040,7 @@
                                 "variable": "L0",
                                 "value": {
                                     "type": "number",
-                                    "value": 2
+                                    "value": 3
                                 }
                             },
                             "id": "ba0c495d-b548-4040-8f09-b656e1b77d5a"
@@ -5253,7 +5253,7 @@
                                 "variable": "L0",
                                 "value": {
                                     "type": "number",
-                                    "value": 2
+                                    "value": 3
                                 }
                             },
                             "id": "a16805b1-c49d-4b33-8530-d013d711c184"
@@ -5755,6 +5755,84 @@
                     "hit3Script": [],
                     "id": "8713a265-a9b2-4e67-b54b-4cd9089bb6f8",
                     "x": 214,
+                    "y": 9
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "left",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_13",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Time your jumps",
+                                    "when dodging -",
+                                    "bullets. otherwise",
+                                    "your eye sockets",
+                                    "wont be the only",
+                                    "holes in your head"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "2d23e188-8b1e-4bfb-a2b2-0e03c42cb96f"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "edfe59ec-c869-48e3-b99f-47ae37154aa4",
+                    "x": 66,
+                    "y": 13
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_14",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Use the up arrow -",
+                                    "reload your Gun",
+                                    "ALSO!!",
+                                    "It takes a second",
+                                    "To reload.",
+                                    "Watch the HUD"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "f9e2670f-2590-4fb9-9c3d-9b25d265fda8"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "c80529f9-80e0-41e0-86aa-bef274222152",
+                    "x": 162,
                     "y": 9
                 }
             ],
@@ -6506,7 +6584,7 @@
         {
             "id": "2faea623-a64b-448a-8392-7180c5830f63",
             "name": "Bar Sprites\\Villager_A",
-            "symbol": "sprite_bar_sprites_villager_1",
+            "symbol": "sprite_bar_sprites_villager",
             "numFrames": 1,
             "type": "static",
             "filename": "Bar Sprites\\Villager_A.png",
@@ -6607,7 +6685,7 @@
         {
             "id": "2612389d-4cb5-4e35-ac04-f0e671860679",
             "name": "Bar Sprites\\Villager_A_Sitting",
-            "symbol": "sprite_bar_sprites_villager_2",
+            "symbol": "sprite_bar_sprites_villager_0",
             "numFrames": 1,
             "type": "static",
             "filename": "Bar Sprites\\Villager_A_Sitting.png",
@@ -6708,7 +6786,7 @@
         {
             "id": "95b4ae3c-e762-43d5-abb8-5c3fbc91f4fe",
             "name": "Bar Sprites\\Villager_B",
-            "symbol": "sprite_bar_sprites_villager",
+            "symbol": "sprite_bar_sprites_villager_1",
             "numFrames": 1,
             "type": "static",
             "filename": "Bar Sprites\\Villager_B.png",
@@ -6809,7 +6887,7 @@
         {
             "id": "4df3a7ed-000f-44c7-827b-6c05a7541be2",
             "name": "Bar Sprites\\Villager_B_Sitting",
-            "symbol": "sprite_bar_sprites_villager_0",
+            "symbol": "sprite_bar_sprites_villager_2",
             "numFrames": 1,
             "type": "static",
             "filename": "Bar Sprites\\Villager_B_Sitting.png",
@@ -11645,7 +11723,7 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 272,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,
