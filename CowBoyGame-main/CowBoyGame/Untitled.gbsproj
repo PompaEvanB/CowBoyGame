@@ -6067,6 +6067,35 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "dc05e833-f16f-41d2-8124-3e4c96d1f3ff",
+                    "x": 185,
+                    "y": 9,
+                    "symbol": "trigger_8",
+                    "width": 1,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "4",
+                                "__collapse": false
+                            },
+                            "id": "e19f8969-93ea-4153-9e8a-76bad9dc17af"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_GET_POSITION",
+                            "args": {
+                                "actorId": "$self$",
+                                "vectorX": "2",
+                                "vectorY": "3"
+                            },
+                            "id": "5bc3c330-88f0-466e-876d-9fc375cedbb9"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -11723,7 +11752,7 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 998.4000244140625,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,
