@@ -5498,8 +5498,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Cant you see?",
-                                    "His dead-pan eyes\nand twitching \ntrigger fingers\nsay it all.",
+                                    "Cant you see?\nHis dead-pan eyes",
+                                    "and twitching \ntrigger fingers\nsay it all.",
                                     "The mans been\nwronged and is \nracing against\ntime."
                                 ],
                                 "avatarId": ""
@@ -5534,7 +5534,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Good luck on your\njourney random\nplayer who Ive\nbarely met!!!!!!!!"
+                                    "Good luck on your\njourney random\nplayer !!!"
                                 ],
                                 "avatarId": ""
                             },
@@ -5568,12 +5568,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Gosh who travels    ",
-                                    "all this way to",
-                                    "retrieve medicine?",
+                                    "Gosh who travels\nall this way to \nretrieve medicine?",
                                     "you idiot!",
-                                    "Ride a horse!",
-                                    "Its the 1800s!!>:("
+                                    "Ride a horse!\nIts the 1800s!!"
                                 ],
                                 "avatarId": ""
                             },
@@ -5644,10 +5641,8 @@
                             "args": {
                                 "text": [
                                     "Im scared to jump.",
-                                    "If I fall...",
-                                    "I'll be sent back!",
-                                    "Why did I move to",
-                                    "That island :/"
+                                    "If I fall...\nI'll be sent back!",
+                                    "Why did I move to\nThat island :/"
                                 ],
                                 "avatarId": ""
                             },
@@ -5695,7 +5690,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "946baa96-548b-4518-86c8-96ff6851415c",
-                    "x": 145,
+                    "x": 143,
                     "y": 13
                 },
                 {
@@ -5753,11 +5748,10 @@
                             "args": {
                                 "text": [
                                     "Im stuck.",
-                                    "But the end is...",
-                                    "right there!!!!"
+                                    "But the end is...\nright there!!!!"
                                 ],
                                 "avatarId": "",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "43443603-dbd3-4534-9b31-b0780f4d0e51"
                         }
@@ -5789,12 +5783,10 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Use the up arrow -",
-                                    "reload your Gun",
+                                    "Use the up arrow\nto reload your gun",
                                     "ALSO!!",
-                                    "It takes a second",
-                                    "To reload.",
-                                    "Watch the HUD"
+                                    "It takes a second\nTo reload.",
+                                    "Watch the HUD!!!!!"
                                 ],
                                 "avatarId": ""
                             },
@@ -6076,21 +6068,50 @@
                     "name": "",
                     "id": "6d0c29f1-cf6e-46ba-9fef-c980f7785345",
                     "x": 149,
-                    "y": 12,
+                    "y": 13,
                     "symbol": "trigger_9",
                     "width": 1,
-                    "height": 2,
+                    "height": 1,
                     "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "b1bc0b88-0d55-433c-80d6-9e377efd1e0b",
-                                "x": 0,
+                                "x": 2,
                                 "y": 12,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
                             "id": "f3613057-6148-4059-939e-83f0d51e79df"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "9947d7cc-51f9-4779-a96f-ccc5c199373a",
+                    "x": 147,
+                    "y": 6,
+                    "symbol": "trigger_10",
+                    "width": 1,
+                    "height": 8,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "4",
+                                "__collapse": false
+                            },
+                            "id": "2e9f5b23-b1a0-4722-a189-b0ef8f26aa32"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_GET_POSITION",
+                            "args": {
+                                "actorId": "$self$",
+                                "vectorX": "2",
+                                "vectorY": "3"
+                            },
+                            "id": "7b8b438b-de4c-446e-84f7-ed3c1b90f9ec"
                         }
                     ],
                     "leaveScript": []
@@ -7902,13 +7923,10 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Drinking watery",
-                                    "beer aint the same",
-                                    "I hope someone",
-                                    "deals with the",
-                                    "no good.",
-                                    "beer-stealin.",
-                                    "bandits >:("
+                                    "Drinking watery\nbeer aint the same",
+                                    "I hope someone\ndeals with the",
+                                    "no good.\nbeer-stealin.",
+                                    "bandits!!!"
                                 ],
                                 "avatarId": ""
                             },
@@ -7958,9 +7976,140 @@
                     "id": "e910990f-446d-4330-8980-20382d5e928c",
                     "x": 28,
                     "y": 13
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "2faea623-a64b-448a-8392-7180c5830f63",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_17",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I LIKE BEING \nDIFFERENT (owo)"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "6cbb8419-06bc-48a8-9ecc-4c056472101d"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "022d56c1-782b-49fb-b0d9-4b9c4893cca7",
+                    "x": 47,
+                    "y": 9
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "7859a5d5-2699-40c6-8a0b-de96f5a1651e",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_18",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "AL: Howdy there! \nWhat can I \nget you?",
+                                    "You: Why is your \ntown overrun with \nbandits?",
+                                    "AL: Ever since \nStillwell took \ncontrol of the-",
+                                    "nearby mountain, \nhis bandits have \nbeen terrorizing-",
+                                    "our town. \nThey've been\nrobbing us and-",
+                                    "abusing our \nkindness.",
+                                    "You: Stillwell?",
+                                    "You dont read the \nnewspaper do you? ",
+                                    "Hes the mastermind\nbehind a bunch of \nbandit attacks. ",
+                                    "I even heard hes \nstealing medicine.",
+                                    "You: I need that\nmedicine.",
+                                    "You: My lover is..\nnot well.",
+                                    "You: he robbed me\na few days ago.",
+                                    "AL: I'll be \nrooting for you. ",
+                                    "Want a drink? \nIts on the house.",
+                                    "You: Sure. Why not",
+                                    "HEALTH REPLENISHED\nFORTITUDE LOWERED"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "5a575c82-39e0-400f-8175-36dc30094dc7"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "f9ad6936-7150-4618-ac71-5dd078084c43",
+                    "x": 66,
+                    "y": 13
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "54ad4193-068d-49c8-8f8c-da12e86b9a79",
+                    "x": 72,
+                    "y": 12,
+                    "symbol": "trigger_11",
+                    "width": 8,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "503485ce-d57a-414d-992b-4015552404ca"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "92a76656-aaef-46e1-a5d2-d1a72f57d672",
+                    "x": 0,
+                    "y": 11,
+                    "symbol": "trigger_12",
+                    "width": 1,
+                    "height": 3,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "09551266-009c-4a62-8adc-4be7a0327988",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "bfcf886a-83c9-45de-af72-c194aa94f3c7"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -14398,9 +14547,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 402.3999938964844,
-        "worldScrollY": 128,
-        "zoom": 123.8302463144064,
+        "worldScrollX": 44.79999923706055,
+        "worldScrollY": 0,
+        "zoom": 97.63446326740086,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
