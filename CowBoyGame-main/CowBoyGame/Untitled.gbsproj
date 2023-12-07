@@ -20526,7 +20526,7 @@
                             "Thank you \nfor playing!"
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "822ce68c-f7da-4237-a66d-9f05619c3cb6"
                 },
@@ -28041,8 +28041,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1776.800048828125,
-        "worldScrollY": 262.3999938964844,
+        "worldScrollX": 2364,
+        "worldScrollY": 264,
         "zoom": 116.2098296382319,
         "customColorsEnabled": false,
         "sgbEnabled": false,

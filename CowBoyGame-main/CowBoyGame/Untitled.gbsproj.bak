@@ -19351,7 +19351,7 @@
                                 "variable": "L0",
                                 "value": {
                                     "type": "number",
-                                    "value": 2
+                                    "value": 24
                                 }
                             },
                             "id": "ffb2e759-7ef4-4196-8bd6-83d81f494ff5"
@@ -28041,8 +28041,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
+        "worldScrollX": 1776.800048828125,
+        "worldScrollY": 262.3999938964844,
         "zoom": 116.2098296382319,
         "customColorsEnabled": false,
         "sgbEnabled": false,
